@@ -5,6 +5,7 @@ function Conteudo() {
   return (
     <div className='containerConteudo'>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio cum possimus at enim harum distinctio eveniet corrupti aut repellendus! Facilis mollitia ab voluptates cumque beatae dignissimos pariatur, eos libero.</p>
+      <img src="./images/nihon.avif" className='image' />
     </div>
   )
 }

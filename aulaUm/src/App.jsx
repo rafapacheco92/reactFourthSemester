@@ -1,14 +1,13 @@
 import './App.css'
 import Conteudo from './components/Conteudo'
 import Header from './components/Header'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <div className='divCentral'>
-      <Header/>
-      <h1>Eu sou o Goku</h1>
-      <Conteudo/>
+     <Home />
     </div>
   )
 }
