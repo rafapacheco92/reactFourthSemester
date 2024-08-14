@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.pinkBox {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--cor-4);
+}
