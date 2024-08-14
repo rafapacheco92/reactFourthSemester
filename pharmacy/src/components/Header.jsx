@@ -1,16 +1,12 @@
 import React from 'react'
 import './Header.css'
+import Logo from './logo'
 
 function Header() {
   return (
     <>
-        <div className='header'>
+        <Logo />
 
-            <img src="./logo.png" alt="logo" />
-
-            <h1 className='title'>FARMÁRCIA</h1>
-        </div>
-        
         <div className='pinkBox'></div>
     </>
   )
