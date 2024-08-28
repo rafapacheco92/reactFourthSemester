@@ -6,6 +6,9 @@ import { useState } from 'react';
 function App() {
 
   const [nameInput, setNameInput] = useState('');
+  const [actionInput, setActionInput] = useState('');
+  const [whatInput, setWhatInput] = useState('');
+  const [andInput, setAndInput] = useState('');
 
   const [imagination, setImagination] = useState([{
     id: Date.now(),
@@ -54,14 +57,23 @@ function App() {
   function nameChanger(event){
     setNameInput(event.target.value)
   }
+  function actionChanger(event){
+    setActionInput(event.target.value)
+  }
+  function whatChanger(event){
+    setWhatInput(event.target.value)
+  }
+  function andChanger(event){
+    setAndInput(event.target.value)
+  }
 
   function sleepWell(){
     let sleeper = {
       id: Date.now(),
       picture: nameInput,
-      action: "[name]",
-      what: 0,
-      and: 0
+      action: actionInput,
+      what: whatInput,
+      and: andInput
     }
 
     setImagination([sleeper, ...imagination])
@@ -76,10 +88,25 @@ function App() {
 
         <div className='formSignin'>
             <h2>Dreamer</h2>
-            <label>Dreamer's name:</label>
+            <label>Dreamer's monster:</label>
             <input type="text" placeholder='your fkng name'
               value={nameInput} 
               onChange={nameChanger}
+            />
+            <label>Monster action:</label>
+            <input type="text" placeholder='action'
+              value={actionInput} 
+              onChange={actionChanger}
+            />
+            <label>Where:</label>
+            <input type="text" placeholder='your fkng name'
+              value={whatInput} 
+              onChange={whatChanger}
+            />
+            <label>And?</label>
+            <input type="text" placeholder='your fkng name'
+              value={andInput} 
+              onChange={ (event) => setAndInput(event.target.value)}
             />
             <button onClick={sleepWell}>Sleep... but awake</button>
         </div>
