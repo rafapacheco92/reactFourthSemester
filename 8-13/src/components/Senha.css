@@ -1,0 +1,17 @@
+.content {
+    text-align: 'center'; 
+    margin-top: '50px';
+}
+
+.contentDois {
+    margin-bottom: '20px';
+}
+
+.contentTres {
+    margin-bottom: '20px';
+}
+
+.contentQuatro {
+    font-size: '30px'; 
+    font-weight: 'bold';
+}

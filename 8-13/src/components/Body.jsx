@@ -4,6 +4,7 @@ import Antes from './antes';
 import Depois from './Depois';
 import { useState, useContext } from 'react' 
 import { GlobalContext } from "../contexts/GlobalContext"
+import Senha from './Senha';
 
 
 function Body() {
@@ -20,7 +21,7 @@ function Body() {
     <>
       <div className='content'>
         {isLogged ? <Depois /> : <Antes />}
-        
+        <Senha />
       </div>
     </>
   )
